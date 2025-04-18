@@ -140,6 +140,29 @@ body {
   text-align: center;
   margin-top: 2.5vh;
 }
+/* Music Player Styling */
+.playlist-h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: var(--tea-green);
+  text-align: center;
+  margin-top: 2vh;
+}
+.player-buttons {
+  font-family: 'Rock Salt', cursive;
+  color: var(--vanilla);
+  border-color: var(--tea-green);
+}
+.player-buttons:hover {
+  background-color: none;
+  color: var(--oxford-blue);
+}
+
+.dropdown-custom {
+  background-color: var(--eerie-black);
+  color: var(--vanilla);
+  font-family: 'Rubik Mono One', sans-serif;
+}
 
 /* Contact Section Styles */
 .contact-h1 {
