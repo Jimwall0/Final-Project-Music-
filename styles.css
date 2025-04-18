@@ -89,7 +89,7 @@ body {
   font-size: 3rem;
   color: var(--tea-green);
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 .hero-text {
@@ -141,13 +141,89 @@ body {
   margin-top: 2.5vh;
 }
 
+/* Contact Section Styles */
+.contact-h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  color: var(--oxford-blue);
+  text-align: center;
+  margin-top: 7vh;
+}
+
+.contact-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: var(--oxford-blue);
+  text-align: center;
+  margin-top: 2vh;
+}
+
 /* Footer Bottom Styling */
 .footer-custom {
   background-color: var(--eerie-black);
-  color: var(--vanilla);
+  color: var(--french-gray);
   font-family: 'Rubik Mono One', sans-serif;
 }
 
 .footer-custom.border {
-  border-color: var(--rose-pompadour) !important;
+  border-color: var(--vanilla) !important;
+}
+
+/* Footer Video Styling */
+.footer-section {
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.footer-video {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  min-width: 100%;
+  max-height: auto;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+/* Screen Size adjustments */
+
+@media (max-width: 768px) {
+  /* hero section */
+  .hero-h1 {
+    font-size: 2.3rem;
+    margin-top: 5vh;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+  /* contact section */
+  .contact-h1 {
+    font-size: 2.3rem;
+    margin-top: 5vh;
+  }
+
+  .contact-text {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+}
+
+@media (max-width: 576px) {
+  /* hero section */
+  .hero-h1 {
+    font-size: 1.5rem;
+    margin-top: 10vh;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    margin-top: 3vh;
+  }
 }
