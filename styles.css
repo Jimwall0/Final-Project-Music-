@@ -140,3 +140,14 @@ body {
   text-align: center;
   margin-top: 2.5vh;
 }
+
+/* Footer Bottom Styling */
+.footer-custom {
+  background-color: var(--eerie-black);
+  color: var(--vanilla);
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.footer-custom.border {
+  border-color: var(--rose-pompadour) !important;
+}
