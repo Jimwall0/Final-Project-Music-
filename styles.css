@@ -121,6 +121,10 @@ body {
 }
 
 /* Music Player Styles */
+.mp-custom.border {
+  background-color: var(--brunswick-green) !important;
+  border-color: var(--vanilla) !important;
+}
 .musicplayer-h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
@@ -134,5 +138,5 @@ body {
   font-size: 1rem;
   color: var(--vanilla);
   text-align: center;
-  margin-top: 0vh;
+  margin-top: 2.5vh;
 }
