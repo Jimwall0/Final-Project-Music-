@@ -15,6 +15,10 @@
 --eerie-black: #222823ff;
 --black: #08090aff;
 --dark-slate-gray: #35605aff;
+--rosewood: #6b0f1aff;
+--vermilion: #f24236ff;
+--drab-dark-brown: #2f2504ff;
+--drab-brown-2: #594e36ff;
 }
 
 /* font-family: 'Montserrat', sans-serif;
@@ -25,52 +29,52 @@ font-family: 'Audiowide', cursive; */
 
 /* NavBar Styles */
 .navbar-custom {
-	background-color: var(--dark-purple);
+	background-color: var(--eerie-black);
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 1.2rem;
 }
 
 .navbar-custom .navbar-brand {
-	color: var(--vanilla);
+	color: var(--rose-pompadour);
   font-family: 'Audiowide', cursive;
 }
 
 .navbar-custom .navbar-brand:hover {
-	color: var(--rose-pompadour);
+	color: var(--cerise);
 }
   
 .navbar-custom .nav-link {
-	color: var(--vanilla);
+	color: var(--rose-pompadour);
   transition: transform 0.3s ease, color 0.3s ease;
 }
   
 .navbar-custom .nav-link:hover {
-	color: var(--rose-pompadour);
+	color: var(--cerise);
   transform: scale(1.1);
 }
 
 .navbar-custom .nav-link:visited {
-	color: var(--vanilla);
+	color: var(--rose-pompadour);
 }
 
 .navbar-custom .navbar-toggler-icon {
-  background-color: var(--vanilla);
-}
-
-.navbar-custom .navbar-toggler {
-  border-color: var(--vanilla);
-}
-
-.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
   background-color: var(--rose-pompadour);
 }
 
+.navbar-custom .navbar-toggler {
+  border-color: var(--rose-pompadour);
+}
+
+.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
+  background-color: var(--cerise);
+}
+
 .navbar-custom .navbar-collapse .nav-link:hover {
-  color: var(--rose-pompadour);
+  color: var(--cerise);
 }
 
 .navbar-custom.border {
-  border-color: var(--black) !important;
+  border-color: var(--vanilla) !important;
 }
 
 /* BodyStyles */
@@ -83,7 +87,7 @@ body {
 .hero-h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  color: var(--mindaro);
+  color: var(--tea-green);
   text-align: center;
   margin-top: 10vh;
 }
@@ -91,7 +95,7 @@ body {
 .hero-text {
   font-family: 'Rock Salt', cursive;
   font-size: 1.5rem;
-  color: var(--vanilla);
+  color: var(--mindaro);
   text-align: center;
   margin-top: 2vh;
 }
@@ -99,7 +103,7 @@ body {
 /* Hero Video */
 .hero-section {
   position: relative;
-  height: 75vh;
+  height: 40vh;
   overflow: hidden;
 }
 
@@ -108,7 +112,7 @@ body {
   top: 25%;
   left: 50%;
   min-width: 100%;
-  max-height: 50%;
+  max-height: auto;
   width: auto;
   height: auto;
   transform: translate(-50%, -50%);
