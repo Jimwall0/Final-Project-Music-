@@ -229,7 +229,22 @@ body {
   object-fit: cover;
 }
 
-
+/* Music Video Carousel */
+.music-carousel-buttons {
+  background-color: var(--eerie-black);
+  color: var(--vanilla);
+  font-family: 'Rubik Mono One', sans-serif;
+}
+#musicVideoCarousel {
+  position: relative;
+}
+.carousel-wrapper {
+  max-width: 100%;
+  background-color: var(--eerie-black);
+}
+.carousel-wrapper.border {
+  border-color: var(--vanilla) !important;
+}
 /* Screen Size adjustments */
 
 @media (max-width: 768px) {

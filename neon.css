@@ -159,7 +159,7 @@
 	.warning-text {
 	  font-family: 'Montserrat', sans-serif;
 	  font-size: 1rem;
-	  color: var(--cerise);
+	  color: var(--dark-purple);
 	  text-align: center;
 	  margin-top: 2.5vh;
 	}
@@ -234,7 +234,22 @@
 	  z-index: -1;
 	  object-fit: cover;
 	}
-	
+	/* Carousel Styling */
+	#musicVideoCarousel {
+		position: relative;
+	  }
+	.carousel-wrapper.border {
+		border-color: var(--electric-blue) !important;
+	  }
+	.music-carousel-buttons {
+		background-color: var(--electric-blue);
+		color: var(--vanilla);
+		font-family: 'Rubik Mono One', sans-serif;
+	  }
+	  .carousel-wrapper {
+		max-width: 100%;
+		background-color: var(--malachite);
+	  }
 	
 	/* Screen Size adjustments */
 	
