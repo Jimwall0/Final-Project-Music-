@@ -1,0 +1,291 @@
+/* Color Variables */
+:root {
+	--dark-purple: #351431ff;
+	--persian-orange: #e08e45ff;
+	--vanilla: #f8f4a6ff;
+	--tea-green: #bdf7b7ff;
+	--brunswick-green: #29524aff;
+	--cerise: #e43f6fff;
+	--rose-pompadour: #ff7b9cff;
+	--oxford-blue: #001b2eff;
+	--charcoal: #294c60ff;
+	--french-gray: #adb6c4ff;
+	--coral: #f38d68ff;
+	--mindaro: #c0da74ff;
+	--eerie-black: #222823ff;
+	--black: #08090aff;
+	--dark-slate-gray: #35605aff;
+	--rosewood: #6b0f1aff;
+	--vermilion: #f24236ff;
+	--drab-dark-brown: #2f2504ff;
+	--drab-brown-2: #594e36ff;
+	/* still testing colors */
+	--rich-black: #05171cff;
+	--dark-green: #162721ff;
+	--black-olive: #38382bff;
+	--chamoisee: #99734fff;
+	--rich-black-2: #03111bff;
+	--vanilla: #f8f4a6ff;
+  /* crazy theme */
+  --china-rose: #b24c63ff;
+  --palatinate-blue: #5438dcff;
+  --azure: #357dedff;
+  --electric-blue: #56eef4ff;
+  --malachite: #32e875ff;
+	}
+	
+	/* font-family: 'Montserrat', sans-serif;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 'Press Start 2P', cursive; 
+	font-family: 'Rock Salt', cursive;
+	font-family: 'Audiowide', cursive; */
+	
+	/* NavBar Styles */
+	.navbar-custom {
+		background-color: var(--cerise);
+	  font-family: 'Rubik Mono One', sans-serif;
+	  font-size: 1.2rem;
+	}
+	
+	.navbar-custom .navbar-brand {
+		color: var(--electric-blue);
+	  font-family: 'Audiowide', cursive;
+	}
+	
+	.navbar-custom .navbar-brand:hover {
+		color: var(--malachite);
+	}
+	  
+	.navbar-custom .nav-link {
+		color: var(--electric-blue);
+	  transition: transform 0.3s ease, color 0.3s ease;
+	}
+	  
+	.navbar-custom .nav-link:hover {
+		color: var(--malachite);
+	  transform: scale(1.1);
+	}
+	
+	.navbar-custom .nav-link:visited {
+		color: var(--electric-blue);
+	}
+	
+	.navbar-custom .navbar-toggler-icon {
+	  background-color: var(--electric-blue);
+	}
+	
+	.navbar-custom .navbar-toggler {
+	  border-color: var(--electric-blue);
+	}
+	
+	.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
+	  background-color: var(--malachite);
+	}
+	
+	.navbar-custom .navbar-collapse .nav-link:hover {
+	  color: var(--malachite);
+	}
+	
+	.navbar-custom.border {
+	  border-color: var(--malachite) !important;
+	}
+	
+	/* BodyStyles */
+	body {
+	  background-color: var(--cerise);
+	  color: var(--oxford-blue);
+	}
+	
+	/* Hero Section Styles */
+	.hero-h1 {
+	  font-family: 'Press Start 2P', cursive;
+	  font-size: 3rem;
+	  color: var(--persian-orange);
+	  text-align: center;
+	  margin-top: 7vh;
+	}
+	
+	.hero-text {
+	  font-family: 'Rock Salt', cursive;
+	  font-size: 1.5rem;
+	  color: var(--electric-blue);
+	  text-align: center;
+	  margin-top: 2vh;
+	}
+	
+	/* Hero Video */
+	.hero-section {
+	  position: relative;
+	  height: 40vh;
+	  overflow: hidden;
+	}
+	
+	.hero-video {
+	  position: absolute;
+	  top: 25%;
+	  left: 50%;
+	  min-width: 100%;
+	  max-height: auto;
+	  width: auto;
+	  height: auto;
+	  transform: translate(-50%, -50%);
+	  z-index: -1;
+	  object-fit: cover;
+	}
+	
+	/* Music Player Styles */
+	.mp-custom.border {
+	  background-color: var(--coral) !important;
+	  border-color: var(--vermilion) !important;
+	}
+	.mp-holder {
+	  background-color: var(--cerise) !important;
+	  border-color: var(--malachite) !important;
+	}
+	.musicplayer-h1 {
+	  font-family: 'Press Start 2P', cursive;
+	  font-size: 1.5rem;
+	  color: var(--persian-orange);
+	  text-align: center;
+	  margin-top: 0vh;
+	}
+	.musicplayer-text {
+	  font-family: 'Rock Salt', cursive;
+	  font-size: 1rem;
+	  color: var(--electric-blue);
+	  text-align: center;
+	  margin-top: 2.5vh;
+	}
+	.warning-text {
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 1rem;
+	  color: var(--dark-purple);
+	  text-align: center;
+	  margin-top: 2.5vh;
+	}
+	/* Music Player Styling */
+	.playlist-h2 {
+	  font-family: 'Press Start 2P', cursive;
+	  font-size: 1.5rem;
+	  color: var(--malachite);
+	  text-align: center;
+	  margin-top: 2vh;
+	}
+	.player-buttons {
+	  font-family: 'Audiowide', cursive;
+	  color: var(--electric-blue);
+	  border-color: var(--malachite);
+	}
+	.player-buttons:hover {
+	  background-color: none;
+	  color: var(--oxford-blue);
+	}
+	
+	.dropdown-custom {
+	  background-color: var(--eerie-black);
+	  color: var(--palatinate-blue);
+	  font-family: 'Rubik Mono One', sans-serif;
+	}
+	
+	/* Contact Section Styles */
+	.contact-h1 {
+	  font-family: 'Press Start 2P', cursive;
+	  font-size: 3rem;
+	  color: var(--persian-orange);
+	  text-align: center;
+	  margin-top: 7vh;
+	}
+	
+	.contact-text {
+	  font-family: 'Press Start 2P', cursive;
+	  font-size: 1.5rem;
+	  color: var(--electric-blue);
+	  text-align: center;
+	  margin-top: 2vh;
+	}
+	
+	/* Footer Bottom Styling */
+	.footer-custom {
+	  background-color: var(--cerise);
+	  color: var(--electric-blue);
+	  font-family: 'Rubik Mono One', sans-serif;
+	}
+	
+	.footer-custom.border {
+	  border-color: var(--malachite) !important;
+	}
+	
+	/* Footer Video Styling */
+	.footer-section {
+	  position: relative;
+	  height: 40vh;
+	  overflow: hidden;
+	}
+	
+	.footer-video {
+	  position: absolute;
+	  top: 25%;
+	  left: 50%;
+	  min-width: 100%;
+	  max-height: auto;
+	  width: auto;
+	  height: auto;
+	  transform: translate(-50%, -50%);
+	  z-index: -1;
+	  object-fit: cover;
+	}
+	/* Carousel Styling */
+	#musicVideoCarousel {
+		position: relative;
+	  }
+	.carousel-wrapper.border {
+		border-color: var(--electric-blue) !important;
+	  }
+	.music-carousel-buttons {
+		background-color: var(--electric-blue);
+		color: var(--vanilla);
+		font-family: 'Rubik Mono One', sans-serif;
+	  }
+	  .carousel-wrapper {
+		max-width: 100%;
+		background-color: var(--malachite);
+	  }
+	
+	/* Screen Size adjustments */
+	
+	@media (max-width: 768px) {
+	  /* hero section */
+	  .hero-h1 {
+		font-size: 2.3rem;
+		margin-top: 5vh;
+	  }
+	
+	  .hero-text {
+		font-size: 1.5rem;
+		margin-top: 2vh;
+	  }
+	  /* contact section */
+	  .contact-h1 {
+		font-size: 2.3rem;
+		margin-top: 5vh;
+	  }
+	
+	  .contact-text {
+		font-size: 1.5rem;
+		margin-top: 2vh;
+	  }
+	}
+	
+	@media (max-width: 576px) {
+	  /* hero section */
+	  .hero-h1 {
+		font-size: 1.5rem;
+		margin-top: 10vh;
+	  }
+	
+	  .hero-text {
+		font-size: 1.2rem;
+		margin-top: 3vh;
+	  }
+	}
+	
