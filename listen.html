@@ -7,7 +7,8 @@
      <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Styles.css-->
-    <link href="styles.css" rel="stylesheet">
+    <!-- id so we can change themes -->
+    <link id="themechange" rel="stylesheet" href="styles.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -61,19 +62,27 @@
       <div class="container">
         <div class="">
         <h1 class="text-center musicplayer-h1">Placeholder Title</h1>
-        <p class="text-center musicplayer-text">Placeholder</p>
+        <p class="text-center musicplayer-text">Feel free to change up the theme!</p>
+        <!-- Buttons to change theme -->
+        <div class="text-center my-3">
+          <button class="btn btn-outline-light player-buttons" onclick="changeTheme('styles.css')">Default Theme</button>
+          <button class="btn btn-outline-light player-buttons" onclick="changeTheme('neon.css')">Neon Theme</button>
+          <button class="btn btn-outline-light player-buttons" onclick="changeTheme('styles.css')">Default Theme</button>
+        </div>
         </div>
       </div>
       <div class="container my-4">
         <!-- Div Containing the player-->
         <div class="bg-dark p-4 border border-4 rounded text-white mp-custom">
           <h2 class="text-center mb-4 playlist-h2">Select a Playlist</h2>
-      
+          <div>
+          <p class="text-center warning-text">⚠️ Content Advisory: Some songs in these playlists may contain explicit lyrics. Listener discretion is advised.</p>
+          </div>
           <!-- Playlist Buttons -->
           <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 player-buttons">
             <button class="btn btn-outline-light player-buttons" onclick="switchPlaylist('37i9dQZF1DXcBWIGoYBM5M')">Today's Top Hits</button>
             <button class="btn btn-outline-light player-buttons" onclick="switchPlaylist('7o8lFxaLaCkne3ukojSp0z')">Tristian's Top 5</button>
-            <button class="btn btn-outline-light player-buttons" onclick="switchPlaylist('6PMNIyCHwuvKYCgBcaMbEz')">Chill</button>
+            <button class="btn btn-outline-light player-buttons" onclick="switchPlaylist('6PMNIyCHwuvKYCgBcaMbEz')">Super Chill</button>
             <button class="btn btn-outline-light player-buttons" onclick="switchPlaylist('3ktAYNcRHpazJ9qecm3ptn')">Rock</button>
             <button class="btn btn-outline-light player-buttons" onclick="switchPlaylist('5FJXhjdILmRA2z5bvz4nzf')">Empty</button>
             <!-- Playlist Dropdown Menu -->
@@ -81,11 +90,11 @@
             <button class="btn btn-dark dropdown-toggle" type="button" id="playlistDropdown" data-bs-toggle="dropdown" aria-expanded="false">
               More Playlists
             </button>
-            <!-- ddropdown menu styling here -->
+            <!-- ddropdown menu list items here -->
             <ul class="dropdown-menu dropdown-custom" aria-labelledby="playlistDropdown">
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('37i9dQZF1DXcBWIGoYBM5M')">Today's Top Hits</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('7o8lFxaLaCkne3ukojSp0z')">Tristian's Top 5</a></li>
-              <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('6PMNIyCHwuvKYCgBcaMbEz')">Chill</a></li>
+              <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('6PMNIyCHwuvKYCgBcaMbEz')">Super Chill</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('3ktAYNcRHpazJ9qecm3ptn')">Rock</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('5FJXhjdILmRA2z5bvz4nzf')">Empty</a></li>
             </ul>
@@ -145,6 +154,16 @@
       function switchPlaylist(playlistId) {
         const player = document.getElementById("spotifyPlayer");
         player.src = `https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator&theme=0`;
+      }
+    </script>
+    <!-- Change Theme Script -->
+    <script>
+      // take button input
+      function changeTheme(themeFile) {
+        // get the stylesheet link element
+        // change the href attribute to the new theme file
+        const stylesheet = document.getElementById("themechange");
+        stylesheet.href = themeFile;
       }
     </script>
   </body>
