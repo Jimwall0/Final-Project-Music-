@@ -25,6 +25,7 @@
 --black-olive: #38382bff;
 --chamoisee: #99734fff;
 --rich-black-2: #03111bff;
+--vanilla: #f8f4a6ff;
 }
 
 /* font-family: 'Montserrat', sans-serif;
@@ -41,42 +42,42 @@ font-family: 'Audiowide', cursive; */
 }
 
 .navbar-custom .navbar-brand {
-	color: var(--rose-pompadour);
+	color: var(--vanilla);
   font-family: 'Audiowide', cursive;
 }
 
 .navbar-custom .navbar-brand:hover {
-	color: var(--cerise);
+	color: var(--chamoisee);
 }
   
 .navbar-custom .nav-link {
-	color: var(--rose-pompadour);
+	color: var(--vanilla);
   transition: transform 0.3s ease, color 0.3s ease;
 }
   
 .navbar-custom .nav-link:hover {
-	color: var(--cerise);
+	color: var(--chamoisee);
   transform: scale(1.1);
 }
 
 .navbar-custom .nav-link:visited {
-	color: var(--rose-pompadour);
+	color: var(--vanilla);
 }
 
 .navbar-custom .navbar-toggler-icon {
-  background-color: var(--rose-pompadour);
+  background-color: var(--vanilla);
 }
 
 .navbar-custom .navbar-toggler {
-  border-color: var(--rose-pompadour);
+  border-color: var(--vanilla);
 }
 
 .navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
-  background-color: var(--cerise);
+  background-color: var(--chamoisee);
 }
 
 .navbar-custom .navbar-collapse .nav-link:hover {
-  color: var(--cerise);
+  color: var(--chamoisee);
 }
 
 .navbar-custom.border {
@@ -85,7 +86,7 @@ font-family: 'Audiowide', cursive; */
 
 /* BodyStyles */
 body {
-  background-color: var(--persian-orange);
+  background-color: var(--black-olive);
   color: var(--oxford-blue);
 }
 
@@ -128,13 +129,17 @@ body {
 
 /* Music Player Styles */
 .mp-custom.border {
-  background-color: var(--brunswick-green) !important;
+  background-color: var(--black-olive) !important;
+  border-color: var(--tea-green) !important;
+}
+.mp-holder {
+  background-color: var(--eerie-black) !important;
   border-color: var(--vanilla) !important;
 }
 .musicplayer-h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  color: var(--mindaro);
+  color: var(--tea-green);
   text-align: center;
   margin-top: 0vh;
 }
@@ -142,7 +147,7 @@ body {
 .musicplayer-text {
   font-family: 'Rock Salt', cursive;
   font-size: 1rem;
-  color: var(--vanilla);
+  color: var(--mindaro);
   text-align: center;
   margin-top: 2.5vh;
 }
@@ -155,8 +160,8 @@ body {
   margin-top: 2vh;
 }
 .player-buttons {
-  font-family: 'Rock Salt', cursive;
-  color: var(--vanilla);
+  font-family: 'Audiowide', cursive;
+  color: var(--mindaro);
   border-color: var(--tea-green);
 }
 .player-buttons:hover {
@@ -190,7 +195,7 @@ body {
 /* Footer Bottom Styling */
 .footer-custom {
   background-color: var(--eerie-black);
-  color: var(--french-gray);
+  color: var(--vanilla);
   font-family: 'Rubik Mono One', sans-serif;
 }
 
