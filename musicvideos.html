@@ -63,13 +63,12 @@
 	<section class="mp-holder bg-dark p-3 border border-4">
 	<div class="container">
         <div class="">
-        <h1 class="text-center musicplayer-h1">Placeholder Title</h1>
-        <p class="text-center musicplayer-text">Feel free to change up the theme!</p>
+        <h1 class="text-center musicplayer-h1">Feel free to change up the theme!</h1>
         <!-- Buttons to change theme -->
         <div class="text-center my-3">
-          <button class="btn btn-outline-light player-buttons" onclick="changeTheme('styles.css')">Default Theme</button>
-          <button class="btn btn-outline-light player-buttons" onclick="changeTheme('neon.css')">Neon Theme</button>
-          <button class="btn btn-outline-light player-buttons" onclick="changeTheme('styles.css')">Default Theme</button>
+          <button class="btn player-buttons" onclick="changeTheme('styles.css')">Default Theme</button>
+          <button class="btn player-buttons" onclick="changeTheme('neon.css')">Neon Theme</button>
+          <button class="btn player-buttons" onclick="changeTheme('styles.css')">Default Theme</button>
         </div>
         </div>
 	<div class="container my-4">
@@ -92,6 +91,8 @@
       <!-- First Video -->
       <div class="carousel-item active">
         <div class="d-flex justify-content-center">
+          <!-- ratio is bootstrap for embeded content -->
+          <!-- it forces it to keep aspect ratio -->
           <div class="ratio ratio-16x9">
             <iframe src="https://www.youtube.com/embed/XMVMRh3zvMw"
               title="YouTube video player"
