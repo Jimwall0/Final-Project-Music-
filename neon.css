@@ -95,6 +95,16 @@
 	  background-color: var(--cerise);
 	  color: var(--oxford-blue);
 	}
+
+	/* didn't like Bootstrap Shadow */
+	.custom-shadow {
+		box-shadow: 0 0 10px var(--rich-black);
+	}
+
+	/* text shadows */
+	.text-shadow {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
 	
 	/* Hero Section Styles */
 	.hero-h1 {
@@ -183,7 +193,7 @@
 		border-color: var(--tea-green);
 		transform: scale(1.1);
 	  }
-	  
+
 	.player-buttons {
 	  font-family: 'Audiowide', cursive;
 	  color: var(--electric-blue);
