@@ -165,6 +165,18 @@ body {
   text-align: center;
   margin-top: 2vh;
 }
+.theme-buttons {
+  font-family: 'Audiowide', cursive;
+  color: var(--mindaro);
+  border-color: var(--tea-green);
+}
+.theme-buttons:hover {
+  background-color: none;
+  color: var(--vanilla);
+  border-color: var(--tea-green);
+  transform: scale(1.1);
+}
+
 .player-buttons {
   font-family: 'Audiowide', cursive;
   color: var(--mindaro);
@@ -172,7 +184,7 @@ body {
 }
 .player-buttons:hover {
   background-color: none;
-  color: var(--oxford-blue);
+  border-color: var(--tea-green);
 }
 
 .dropdown-custom {
