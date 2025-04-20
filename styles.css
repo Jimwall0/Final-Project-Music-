@@ -90,6 +90,17 @@ body {
   color: var(--oxford-blue);
 }
 
+/* for tags, didn't like Bootstrap Shadow */
+	/* didn't like Bootstrap Shadow */
+	.custom-shadow {
+		box-shadow: 0 0 10px var(--rich-black);
+	}
+
+	/* text shadows */
+	.text-shadow {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
 /* Hero Section Styles */
 .hero-h1 {
   font-family: 'Press Start 2P', cursive;
@@ -165,6 +176,18 @@ body {
   text-align: center;
   margin-top: 2vh;
 }
+.theme-buttons {
+  font-family: 'Audiowide', cursive;
+  color: var(--mindaro);
+  border-color: var(--tea-green);
+}
+.theme-buttons:hover {
+  background-color: none;
+  color: var(--vanilla);
+  border-color: var(--tea-green);
+  transform: scale(1.1);
+}
+
 .player-buttons {
   font-family: 'Audiowide', cursive;
   color: var(--mindaro);
@@ -172,7 +195,7 @@ body {
 }
 .player-buttons:hover {
   background-color: none;
-  color: var(--oxford-blue);
+  border-color: var(--tea-green);
 }
 
 .dropdown-custom {
