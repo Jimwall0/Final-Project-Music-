@@ -284,6 +284,39 @@ a.contact-text:hover {
 .carousel-wrapper.border {
   border-color: var(--vanilla) !important;
 }
+
+/* Login Buttons */
+.login-buttons {
+  font-family: 'Audiowide', cursive;
+  color: var(--mindaro);
+  border-color: var(--tea-green);
+  background-color: var(--chamoisee);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.login-buttons:hover {
+  background-color: var(--drab-brown-2);
+  border-color: var(--tea-green);
+  color: var(--chamoisee);
+  transform: scale(1.1);
+}
+
+/* Instructions Styling */
+.instructions-h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: var(--tea-green);
+  text-align: center;
+  margin-top: 0vh;
+}
+.instructions-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--mindaro);
+  text-align: center;
+  margin-top: 2.5vh;
+  list-style: none;
+}
+
 /* Screen Size adjustments */
 
 @media (max-width: 768px) {
