@@ -1,0 +1,17 @@
+<!-- placeholder until I figure out spotify dev app -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>You shouldn't Be here!?!</title>
+    </head>
+    <body>
+        <h1>Suggest a song</h1>
+        <form action="/submit-song" method="POST">
+            <input type="text" id="trackUri" name="trackUri" class="form-control" placeholder="e.g. https://open.spotify.com/track/..." required><br><br>
+            <a href="/login" class="btn btn-success my-3">Log in with Spotify</a>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="https://open.spotify.com/playlist/1sTzjueAClM4LRulUso1pV?si=5211256a6f8e42e2" class="btn btn-success my-3">The Big Playlist</a>
+        </form>
+    </body>
+</html>
