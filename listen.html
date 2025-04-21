@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Final Project(music)</title>
   </head>
   <body>
@@ -71,7 +73,7 @@
         <div class="text-center my-3">
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('neon.css')">Neon Theme</button>
-          <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
+          <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
         </div>
         </div>
       </div>
@@ -84,11 +86,11 @@
           </div>
           <!-- Playlist Buttons -->
           <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 player-buttons">
+            <button class="btn btn-outline-light player-buttons text-shadow" onclick="switchPlaylist('1sTzjueAClM4LRulUso1pV')">The Big Playlist</button>
             <button class="btn btn-outline-light player-buttons text-shadow" onclick="switchPlaylist('37i9dQZF1DXcBWIGoYBM5M')">Today's Top Hits</button>
             <button class="btn btn-outline-light player-buttons text-shadow" onclick="switchPlaylist('7o8lFxaLaCkne3ukojSp0z')">Tristian's Top 5</button>
             <button class="btn btn-outline-light player-buttons text-shadow" onclick="switchPlaylist('6PMNIyCHwuvKYCgBcaMbEz')">Super Chill</button>
             <button class="btn btn-outline-light player-buttons text-shadow" onclick="switchPlaylist('3ktAYNcRHpazJ9qecm3ptn')">Rock</button>
-            <button class="btn btn-outline-light player-buttons text-shadow" onclick="switchPlaylist('5FJXhjdILmRA2z5bvz4nzf')">Empty</button>
             <!-- Playlist Dropdown Menu -->
           <div class="dropdown dropdown-custom">
             <button class="btn btn-dark dropdown-toggle" type="button" id="playlistDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,11 +98,11 @@
             </button>
             <!-- ddropdown menu list items here -->
             <ul class="dropdown-menu dropdown-custom" aria-labelledby="playlistDropdown">
+              <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('1sTzjueAClM4LRulUso1pV')">The Big Playlist</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('37i9dQZF1DXcBWIGoYBM5M')">Today's Top Hits</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('7o8lFxaLaCkne3ukojSp0z')">Tristian's Top 5</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('6PMNIyCHwuvKYCgBcaMbEz')">Super Chill</a></li>
               <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('3ktAYNcRHpazJ9qecm3ptn')">Rock</a></li>
-              <li><a class="dropdown-item player-buttons" href="#" onclick="switchPlaylist('5FJXhjdILmRA2z5bvz4nzf')">Empty</a></li>
             </ul>
           </div>
           </div>
@@ -111,7 +113,7 @@
             <iframe
               id="spotifyPlayer"
               title="Spotify Player"
-              src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/playlist/1sTzjueAClM4LRulUso1pV?utm_source=generator&theme=0"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius:12px; border:none;"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy">
@@ -129,26 +131,22 @@
         Your browser does not support the video tag.
       </video>
       <!-- container for footer text -->
-    <div class="container">
+    <div class="container text-center">
       <div class="">
-      <h1 class="text-center contact-h1 text-shadow">Contact</h1>
-      <p class="text-center contact-text text-shadow">Social links below, placeholder</p>
+        <h1 class="contact-h1 text-shadow">Contact</h1>
       </div>
-      <!-- placeholder for test -->
-       <div>
-          <p class="text-center contact-text">Placeholder</p>
+      <div class="p-2">
+        <a href="https://github.com/TebariousBag" class="text-center contact-text text-shadow mx-2">TebariousBag - Github</a>
+      </div>
+       <div class="p-2">
+          <a href="https://github.com/Jimwall0" class="text-center contact-text text-shadow mx-2">Jimwall0 - Github</a>
        </div>
     </div>
     </section>
     <!-- Very Bottom Section -->
     <div class="footer-custom border border-4">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center h-100">
-          <p class="text-center p-2 m-0 text-shadow">Copyright Placeholder</p>
-        </div>
-        <div>
-          <p class="text-center p-2 m-0 text-shadow">Our githubs or whatever here</p>
-        </div>
+      <div class="container text-center">
+        <p class="p-2 m-0 text-shadow">&copy; 2025 TebariousBag & Jimwall0 No rights reserved — remix responsibly</p>
       </div>
     </div>
   </footer>
