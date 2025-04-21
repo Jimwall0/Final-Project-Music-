@@ -42,7 +42,7 @@ def get_playlists():
     if not sp_oauth.validate_token(cache_handler.get_cached_token()):
         auth_url = sp_oauth.get_authorize_url()
         return redirect(auth_url)
-     
+
     playlists = sp.current_user_playlists()
     playlists_info = [(pl['name'], pl['external_urls']['spotify']) for pl in playlists['items']]
     playlists_html = '<br>' .join([f'{name}: {url}' for name, url in playlists_info])

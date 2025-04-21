@@ -69,10 +69,10 @@
     <section class="bg-dark p-3 border border-4 mp-holder">
       <div class="container">
         <div class="">
-        <h1 class="text-center musicplayer-h1 text-shadow">Placeholder Title</h1>
-        <!-- Buttons to change theme -->
-        <div class="text-center my-3">
-          <h2 class="text-center musicplayer-h1 text-shadow">Waiting for Tsim to add some stuff.</h2>
+        <h1 class="text-center musicplayer-h1 text-shadow">Recomend a Song on Spotify</h1>
+        <!-- Buttons to change theme and a recomendation form -->
+        <div class="text-center my-3" id="recommend">
+          <h2 class="text-center musicplayer-h1 text-shadow">Change format</h2>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('neon.css')">Neon Theme</button>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
@@ -125,6 +125,14 @@
         const stylesheet = document.getElementById("themechange");
         stylesheet.href = themeFile;
       }
+    </script>
+    <!-- script to add other html files to index.html -->
+    <script>
+      fetch('form.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('recommend').insertAdjacentHTML('afterbegin', data);
+        })
     </script>
   </body>
 </html>
