@@ -48,42 +48,42 @@
 	}
 	
 	.navbar-custom .navbar-brand {
-		color: var(--french-gray);
+		color: var(--charcoal);
 	  font-family: 'Audiowide', cursive;
 	}
 	
 	.navbar-custom .navbar-brand:hover {
-		color: var(--charcoal);
+		color: var(--french-gray);
 	}
 	  
 	.navbar-custom .nav-link {
-		color: var(--french-gray);
+		color: var(--charcoal);
 	  transition: transform 0.3s ease, color 0.3s ease;
 	}
 	  
 	.navbar-custom .nav-link:hover {
-		color: var(--charcoal);
+		color: var(--french-gray);
 	  transform: scale(1.1);
 	}
 	
 	.navbar-custom .nav-link:visited {
-		color: var(--french-gray);
+		color: var(--charcoal);
 	}
 	
 	.navbar-custom .navbar-toggler-icon {
-	  background-color: var(--french-gray);
-	}
-	
-	.navbar-custom .navbar-toggler {
-	  border-color: var(--french-gray);
-	}
-	
-	.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
 	  background-color: var(--charcoal);
 	}
 	
+	.navbar-custom .navbar-toggler {
+	  border-color: var(--charcoal);
+	}
+	
+	.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
+	  background-color: var(--french-gray);
+	}
+	
 	.navbar-custom .navbar-collapse .nav-link:hover {
-	  color: var(--charcoal);
+	  color: var(--french-gray);
 	}
 	
 	.navbar-custom.border {
@@ -110,7 +110,7 @@
 	.hero-h1 {
 	  font-family: 'Press Start 2P', cursive;
 	  font-size: 3rem;
-	  color: var(--french-gray);
+	  color: var(--rich-black-2);
 	  text-align: center;
 	  margin-top: 7vh;
 	}
@@ -118,7 +118,7 @@
 	.hero-text {
 	  font-family: 'Rock Salt', cursive;
 	  font-size: 1.5rem;
-	  color: var(--french-gray);
+	  color: var(--rich-black-2);
 	  text-align: center;
 	  margin-top: 2vh;
 	}
