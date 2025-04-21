@@ -220,12 +220,28 @@
 	}
 	
 	.contact-text {
-	  font-family: 'Press Start 2P', cursive;
-	  font-size: 1.5rem;
-	  color: var(--electric-blue);
-	  text-align: center;
-	  margin-top: 2vh;
-	}
+		font-family: 'Press Start 2P', cursive;
+		font-size: 1.5rem;
+		color: var(--rich-black-2);
+		text-align: center;
+		margin-top: 2vh;
+	  }
+	  
+	  a.contact-text {
+		font-family: 'Press Start 2P', cursive;
+		font-size: 1.5rem;
+		color: var(--electric-blue);
+		text-align: center;
+		margin-top: 2vh;
+		text-decoration: none;
+		transition: transform 0.3s ease, color 0.3s ease;
+		display: inline-block;
+	  }
+	  
+	  a.contact-text:hover {
+		color: var(--malachite);
+		transform: scale(1.1);
+	  }
 	
 	/* Footer Bottom Styling */
 	.footer-custom {
@@ -274,6 +290,7 @@
 		background-color: var(--malachite);
 	  }
 	
+	  
 	/* Screen Size adjustments */
 	
 	@media (max-width: 768px) {

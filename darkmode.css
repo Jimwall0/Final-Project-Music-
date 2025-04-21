@@ -278,16 +278,16 @@
 		position: relative;
 	  }
 	.carousel-wrapper.border {
-		border-color: var(--electric-blue) !important;
+		border-color: var(--rich-black) !important;
 	  }
 	.music-carousel-buttons {
-		background-color: var(--electric-blue);
-		color: var(--vanilla);
+		background-color: var(--rich-black-2);
+		color: var(--charcoal);
 		font-family: 'Rubik Mono One', sans-serif;
 	  }
 	  .carousel-wrapper {
 		max-width: 100%;
-		background-color: var(--malachite);
+		background-color: var(--rich-black-2);
 	  }
 	
 	/* Screen Size adjustments */
