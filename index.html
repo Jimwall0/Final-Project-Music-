@@ -15,14 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <title>Final Project(music)</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/tbp-favicon.png">
+    <title>The Big Playlist</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-custom border border-4">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img class="p-1" src="images/youtube.webp" style="height: 50px; width: auto;" alt="our-logo">Final Project(music)
+            <img class="p-1 mx-2" src="images/tbp-logo-white.png" alt="tbp-logo">The Big Playlist
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar"
             aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,34 +58,36 @@
       <!-- container for hero text -->
     <div class="container">
       <div class="">
-      <h1 class="text-center hero-h1 text-shadow">Welcome to Final Project(music)</h1>
-      <p class="text-center hero-text text-shadow">This is Placeholder text.</p>
+      <h1 class="text-center hero-h1 text-shadow">Welcome to The Big Playlist</h1>
+      <p class="text-center hero-text text-shadow"><span class="highlight">Listen</span> to some music , <span class="highlight">Watch</span> some music videos , or add a song to <span class="highlight">The Big Playlist !</span></p>
       </div>
-      <!-- placeholder for test -->
-       <div>
-          <p class="text-center hero-text ">Placeholder</p>
-       </div>
     </div>
     </section>
     <!-- Placeholder Section -->
     <section class="bg-dark p-3 border border-4 mp-holder">
       <div class="container">
+        <div class="text-center my-3">
+          <h2 class="text-center musicplayer-h1 text-shadow">Feel free to change the theme!</h2>
+          <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
+          <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('neon.css')">Neon Theme</button>
+		  <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
+        </div>
         <div class="">
         <h1 class="text-center instructions-h1 text-shadow">Add a song to The Big Playlist!</h1>
         <ul class="text-center instructions-text text-shadow">
-          <li><b>Step 1.</b> Login to Spotify</li>
+          <li><b>Step 1.</b> Log in with Spotify with the button below</li>
           <li><b>Step 2.</b> Find the url to the track you would like to add</li>
           <li><b>Step 3.</b> Paste the url in the bar below</li>
           <li><b>Step 4.</b> Click Submit!</li>
         </ul>
         <!-- Buttons to change theme and a recomendation form -->
         <!-- Empty div for messing around with Spotify API -->
-        <div class="text-center my-3" id="recommend"></div>
-        <div class="text-center my-3">
-          <h2 class="text-center musicplayer-h1 text-shadow">Change format</h2>
-          <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
-          <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('neon.css')">Neon Theme</button>
-		  <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
+        <div class="text-center my-3 bg-dark p-4 border border-4 rounded text-white login-custom" id="recommend"></div>
+        <div class="navbar-custom">
+        <p class="text-center instructions-text text-shadow">The Big Playlist is below, or find other playlists on the <a class="nav-link" href="listen.html">Listen Page!</a></p>
+        </div>
+        <div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1sTzjueAClM4LRulUso1pV?utm_source=generator" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         </div>
       </div>

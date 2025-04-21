@@ -90,6 +90,14 @@ body {
   color: var(--oxford-blue);
 }
 
+.highlight {
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  color: var(--tea-green);
+  text-align: center;
+  margin-top: 2vh;
+}
+
 /* for tags, didn't like Bootstrap Shadow */
 	/* didn't like Bootstrap Shadow */
 	.custom-shadow {
@@ -315,6 +323,16 @@ a.contact-text:hover {
   text-align: center;
   margin-top: 2.5vh;
   list-style: none;
+}
+
+/* Login Styling */
+.login-custom.border {
+  background-color: var(--black-olive) !important;
+  border-color: var(--tea-green) !important;
+}
+.login-holder {
+  background-color: var(--eerie-black) !important;
+  border-color: var(--vanilla) !important;
 }
 
 /* Screen Size adjustments */
