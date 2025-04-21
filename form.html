@@ -1,2 +1,16 @@
 <!-- placeholder until I figure out spotify dev app -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCcyl8dxZz36N1OUb_OSNlGUnywjbBGs9lw04b7Kj4nryUdQ/viewform?embedded=true" width="640" height="553" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Submit a Song</title>
+    </head>
+    <body>
+        <h1>Suggest a song</h1>
+        <form action="/submit-song" method="POST">
+            <label for="trackUri">Spotify Track URI or Link:</label><br>
+            <input type="text" id="trackUri" name="trackUri" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
