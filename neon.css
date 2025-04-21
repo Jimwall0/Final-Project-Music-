@@ -289,6 +289,38 @@
 		max-width: 100%;
 		background-color: var(--malachite);
 	  }
+
+	  /* Login Buttons */
+	.login-buttons {
+	font-family: 'Audiowide', cursive;
+	color: var(--malachite);
+	border-color: var(--electric-blue);
+	background-color: var(--persian-orange);
+	transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .login-buttons:hover {
+	background-color: var(--electric-blue);
+	border-color: var(--malachite);
+	color: var(--rich-black-2);
+	transform: scale(1.1);
+  }
+
+  /* Instructions Styling */
+.instructions-h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.5rem;
+	color: var(--persian-orange);
+	text-align: center;
+	margin-top: 0vh;
+  }
+  .instructions-text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: var(--electric-blue);
+	text-align: center;
+	margin-top: 2.5vh;
+	list-style: none;
+  }
 	
 	  
 	/* Screen Size adjustments */
