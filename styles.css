@@ -90,6 +90,14 @@ body {
   color: var(--oxford-blue);
 }
 
+.highlight {
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  color: var(--tea-green);
+  text-align: center;
+  margin-top: 2vh;
+}
+
 /* for tags, didn't like Bootstrap Shadow */
 	/* didn't like Bootstrap Shadow */
 	.custom-shadow {
