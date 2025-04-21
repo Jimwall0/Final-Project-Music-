@@ -317,6 +317,16 @@ a.contact-text:hover {
   list-style: none;
 }
 
+/* Login Styling */
+.login-custom.border {
+  background-color: var(--black-olive) !important;
+  border-color: var(--tea-green) !important;
+}
+.login-holder {
+  background-color: var(--eerie-black) !important;
+  border-color: var(--vanilla) !important;
+}
+
 /* Screen Size adjustments */
 
 @media (max-width: 768px) {

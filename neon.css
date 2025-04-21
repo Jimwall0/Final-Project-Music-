@@ -321,6 +321,16 @@
 	margin-top: 2.5vh;
 	list-style: none;
   }
+
+  /* Login Styling */
+.login-custom.border {
+	background-color: var(--coral) !important;
+	border-color: var(--persian-orange) !important;
+  }
+  .login-holder {
+	background-color: var(--eerie-black) !important;
+	border-color: var(--vanilla) !important;
+  }
 	
 	  
 	/* Screen Size adjustments */
