@@ -26,6 +26,12 @@
 	--chamoisee: #99734fff;
 	--rich-black-2: #03111bff;
 	--vanilla: #f8f4a6ff;
+  /* crazy theme */
+  --china-rose: #b24c63ff;
+  --palatinate-blue: #5438dcff;
+  --azure: #357dedff;
+  --electric-blue: #56eef4ff;
+  --malachite: #32e875ff;
 	}
 	
 	/* font-family: 'Montserrat', sans-serif;
@@ -36,65 +42,75 @@
 	
 	/* NavBar Styles */
 	.navbar-custom {
-		background-color: var(--eerie-black);
+		background-color: var(--rich-black-2);
 	  font-family: 'Rubik Mono One', sans-serif;
 	  font-size: 1.2rem;
 	}
 	
 	.navbar-custom .navbar-brand {
-		color: var(--vanilla);
+		color: var(--french-gray);
 	  font-family: 'Audiowide', cursive;
 	}
 	
 	.navbar-custom .navbar-brand:hover {
-		color: var(--tea-green);
+		color: var(--charcoal);
 	}
 	  
 	.navbar-custom .nav-link {
-		color: var(--vanilla);
+		color: var(--french-gray);
 	  transition: transform 0.3s ease, color 0.3s ease;
 	}
 	  
 	.navbar-custom .nav-link:hover {
-		color: var(--tea-green);
+		color: var(--charcoal);
 	  transform: scale(1.1);
 	}
 	
 	.navbar-custom .nav-link:visited {
-		color: var(--vanilla);
+		color: var(--french-gray);
 	}
 	
 	.navbar-custom .navbar-toggler-icon {
-	  background-color: var(--vanilla);
+	  background-color: var(--french-gray);
 	}
 	
 	.navbar-custom .navbar-toggler {
-	  border-color: var(--vanilla);
+	  border-color: var(--french-gray);
 	}
 	
 	.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
-	  background-color: var(--tea-green);
+	  background-color: var(--charcoal);
 	}
 	
 	.navbar-custom .navbar-collapse .nav-link:hover {
-	  color: var(--tea-green);
+	  color: var(--charcoal);
 	}
 	
 	.navbar-custom.border {
-	  border-color: var(--vanilla) !important;
+	  border-color: var(--rich-black) !important;
 	}
 	
 	/* BodyStyles */
 	body {
-	  background-color: var(--black-olive);
+	  background-color: var(--rich-black-2);
 	  color: var(--oxford-blue);
+	}
+
+	/* didn't like Bootstrap Shadow */
+	.custom-shadow {
+		box-shadow: 0 0 10px var(--rich-black);
+	}
+
+	/* text shadows */
+	.text-shadow {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	}
 	
 	/* Hero Section Styles */
 	.hero-h1 {
 	  font-family: 'Press Start 2P', cursive;
 	  font-size: 3rem;
-	  color: var(--tea-green);
+	  color: var(--french-gray);
 	  text-align: center;
 	  margin-top: 7vh;
 	}
@@ -102,7 +118,7 @@
 	.hero-text {
 	  font-family: 'Rock Salt', cursive;
 	  font-size: 1.5rem;
-	  color: var(--mindaro);
+	  color: var(--french-gray);
 	  text-align: center;
 	  margin-top: 2vh;
 	}
@@ -129,31 +145,31 @@
 	
 	/* Music Player Styles */
 	.mp-custom.border {
-	  background-color: var(--black-olive) !important;
-	  border-color: var(--tea-green) !important;
+	  background-color: var(--rich-black-2) !important;
+	  border-color: var(--rich-black) !important;
 	}
 	.mp-holder {
-	  background-color: var(--eerie-black) !important;
-	  border-color: var(--vanilla) !important;
+	  background-color: var(--rich-black-2) !important;
+	  border-color: var(--rich-black) !important;
 	}
 	.musicplayer-h1 {
 	  font-family: 'Press Start 2P', cursive;
 	  font-size: 1.5rem;
-	  color: var(--tea-green);
+	  color: var(--charcoal);
 	  text-align: center;
 	  margin-top: 0vh;
 	}
 	.musicplayer-text {
 	  font-family: 'Rock Salt', cursive;
 	  font-size: 1rem;
-	  color: var(--mindaro);
+	  color: var(--charcoal);
 	  text-align: center;
 	  margin-top: 2.5vh;
 	}
 	.warning-text {
 	  font-family: 'Montserrat', sans-serif;
 	  font-size: 1rem;
-	  color: var(--vanilla);
+	  color: var(--french-gray);
 	  text-align: center;
 	  margin-top: 2.5vh;
 	}
@@ -161,23 +177,36 @@
 	.playlist-h2 {
 	  font-family: 'Press Start 2P', cursive;
 	  font-size: 1.5rem;
-	  color: var(--tea-green);
+	  color: var(--charcoal);
 	  text-align: center;
 	  margin-top: 2vh;
 	}
+
+	.theme-buttons {
+		font-family: 'Audiowide', cursive;
+		color: var(--charcoal);
+		border-color: var(--rich-black);
+	  }
+	  .theme-buttons:hover {
+		background-color: none;
+		color: var(--charcoal);
+		border-color: var(--french-gray);
+		transform: scale(1.1);
+	  }
+
 	.player-buttons {
 	  font-family: 'Audiowide', cursive;
-	  color: var(--mindaro);
-	  border-color: var(--tea-green);
+	  color: var(--charcoal);
+	  border-color: var(--rich-black);
 	}
 	.player-buttons:hover {
-	  background-color: none;
-	  color: var(--oxford-blue);
+	  background-color: var(--rich-black-2);
+	  color: var(--french-gray);
 	}
 	
 	.dropdown-custom {
-	  background-color: var(--eerie-black);
-	  color: var(--vanilla);
+	  background-color: var(--rich-black-2);
+	  color: var(--palatinate-blue);
 	  font-family: 'Rubik Mono One', sans-serif;
 	}
 	
@@ -185,28 +214,44 @@
 	.contact-h1 {
 	  font-family: 'Press Start 2P', cursive;
 	  font-size: 3rem;
-	  color: var(--oxford-blue);
+	  color: var(--rich-black-2);
 	  text-align: center;
 	  margin-top: 7vh;
 	}
 	
 	.contact-text {
-	  font-family: 'Press Start 2P', cursive;
-	  font-size: 1.5rem;
-	  color: var(--oxford-blue);
-	  text-align: center;
-	  margin-top: 2vh;
-	}
-	
+		font-family: 'Press Start 2P', cursive;
+		font-size: 1.5rem;
+		color: var(--rich-black-2);
+		text-align: center;
+		margin-top: 2vh;
+	  }
+	  
+	  a.contact-text {
+		font-family: 'Press Start 2P', cursive;
+		font-size: 1.5rem;
+		color: var(--rich-black-2);
+		text-align: center;
+		margin-top: 2vh;
+		text-decoration: none;
+		transition: transform 0.3s ease, color 0.3s ease;
+		display: inline-block;
+	  }
+	  
+	  a.contact-text:hover {
+		color: var(--french-gray);
+		transform: scale(1.1);
+	  }
+
 	/* Footer Bottom Styling */
 	.footer-custom {
-	  background-color: var(--eerie-black);
-	  color: var(--vanilla);
+	  background-color: var(--rich-black-2);
+	  color: var(--french-gray);
 	  font-family: 'Rubik Mono One', sans-serif;
 	}
 	
 	.footer-custom.border {
-	  border-color: var(--vanilla) !important;
+	  border-color: var(--rich-black) !important;
 	}
 	
 	/* Footer Video Styling */
@@ -228,23 +273,23 @@
 	  z-index: -1;
 	  object-fit: cover;
 	}
-	
-	/* Music Video Carousel */
-	.music-carousel-buttons {
-	  background-color: var(--eerie-black);
-	  color: var(--vanilla);
-	  font-family: 'Rubik Mono One', sans-serif;
-	}
+	/* Carousel Styling */
 	#musicVideoCarousel {
-	  position: relative;
-	}
-	.carousel-wrapper {
-	  max-width: 100%;
-	  background-color: var(--eerie-black);
-	}
+		position: relative;
+	  }
 	.carousel-wrapper.border {
-	  border-color: var(--vanilla) !important;
-	}
+		border-color: var(--electric-blue) !important;
+	  }
+	.music-carousel-buttons {
+		background-color: var(--electric-blue);
+		color: var(--vanilla);
+		font-family: 'Rubik Mono One', sans-serif;
+	  }
+	  .carousel-wrapper {
+		max-width: 100%;
+		background-color: var(--malachite);
+	  }
+	
 	/* Screen Size adjustments */
 	
 	@media (max-width: 768px) {

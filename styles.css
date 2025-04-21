@@ -208,7 +208,7 @@ body {
 .contact-h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  color: var(--oxford-blue);
+  color: var(--tea-green);
   text-align: center;
   margin-top: 7vh;
 }
@@ -216,9 +216,25 @@ body {
 .contact-text {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.5rem;
-  color: var(--oxford-blue);
+  color: var(--mindaro);
   text-align: center;
   margin-top: 2vh;
+}
+
+a.contact-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: var(--mindaro);
+  text-align: center;
+  margin-top: 2vh;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+a.contact-text:hover {
+  color: var(--vanilla);
+  transform: scale(1.1);
 }
 
 /* Footer Bottom Styling */
