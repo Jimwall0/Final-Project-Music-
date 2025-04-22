@@ -46,6 +46,13 @@
 	  font-family: 'Rubik Mono One', sans-serif;
 	  font-size: 1.2rem;
 	}
+
+	.logo {
+		color: var(--vanilla);
+		font-family: 'Audiowide', cursive;
+		font-size: 1.8rem;
+		color: var(--charcoal);
+	  }
 	
 	.navbar-custom .navbar-brand {
 		color: var(--charcoal);
@@ -339,6 +346,19 @@
 	background-color: var(--eerie-black) !important;
 	border-color: var(--vanilla) !important;
   }
+
+  /* Spotify Button */
+	.spotify-button {
+	font-family: 'Audiowide', cursive;
+	color: var(--charcoal) !important;
+	border-color: var(--tea-green);
+	transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .spotify-button:hover {
+	border-color: var(--tea-green);
+	color: var(--charcoal) !important;
+	transform: scale(1.1);
+  }
 	
 	/* Screen Size adjustments */
 	
@@ -383,7 +403,7 @@
 		font-size: 3rem;
 		color: var(--charcoal);
 		text-align: center;
-		margin-top: 7vh;
+		margin-top: 2vh;
 	  }
 	  
 	  .contact-text {
@@ -391,7 +411,7 @@
 		  font-size: 1.5rem;
 		  color: var(--charcoal);
 		  text-align: center;
-		  margin-top: 2vh;
+		  margin-top: 1vh;
 		}
 		
 		a.contact-text {

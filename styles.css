@@ -41,6 +41,13 @@ font-family: 'Audiowide', cursive; */
   font-size: 1.2rem;
 }
 
+.logo {
+  color: var(--vanilla);
+  font-family: 'Audiowide', cursive;
+  font-size: 1.8rem;
+  color: var(--tea-green);
+}
+
 .navbar-custom .navbar-brand {
 	color: var(--vanilla);
   font-family: 'Audiowide', cursive;
@@ -303,6 +310,19 @@ a.contact-text:hover {
 }
 .login-buttons:hover {
   background-color: var(--drab-brown-2);
+  border-color: var(--tea-green);
+  color: var(--chamoisee);
+  transform: scale(1.1);
+}
+
+/* Spotify Button */
+.spotify-button {
+  font-family: 'Audiowide', cursive;
+  color: var(--mindaro);
+  border-color: var(--tea-green);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.spotify-button:hover {
   border-color: var(--tea-green);
   color: var(--chamoisee);
   transform: scale(1.1);
