@@ -1,4 +1,5 @@
 const client_id = 'da05c0652b1346c09bc126f873ee9a1b';
+const client_secret = 'd74522686bd54b8496dabca6b20e72a9';
 const redirect_uri = 'http://127.0.0.1:5000/callback';
 const express = require('express');
 const app = express();
@@ -62,9 +63,10 @@ app.get('/callback', (req, res) => {
             },
             headers: {
                 'content-type': 'spplication/x-www-form-urlencoded',
-                'Authorization': `Basic ${(new Buffer.from(client_id + ':' + client_secret).tostring('base64'))}`
+                'Authorization': `Basic ${(new Buffer.from(client_id + ':' + client_secret).toString('base64'))}`
             },
             json: true
         };
     }
+    res.redirect('/');
 });
