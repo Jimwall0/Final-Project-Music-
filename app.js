@@ -5,14 +5,14 @@ const app = express();
 const port = 5000;
 
 
-app.get('/', (reg, req) => {
-    res.send('Hello, World');
+app.get('/', (reg, res) => {
+    res.send('Hello, World!')
 });
 
 
-app.listen(port, () => {
+app.listen(port, '127.0.0.1', () => {
     console.log(`Listening on port ${port}`);
-    console.log(``)
+    console.log(`Hosting on http://127.0.0.1:${port}/`);
 });
 
 
