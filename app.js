@@ -16,6 +16,17 @@ app.listen(port, '127.0.0.1', () => {
 });
 
 
+function generateRandomString(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
+
+
 app.get('/login', (req, res) => {
     const state = generateRandomString(16);
     const scope = 'user-read-private user-read-email';
