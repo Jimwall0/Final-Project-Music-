@@ -46,6 +46,13 @@
 	  font-family: 'Rubik Mono One', sans-serif;
 	  font-size: 1.2rem;
 	}
+
+	.logo {
+		color: var(--vanilla);
+		font-family: 'Audiowide', cursive;
+		font-size: 1.8rem;
+		color: var(--malachite);
+	  }
 	
 	.navbar-custom .navbar-brand {
 		color: var(--electric-blue);
@@ -310,6 +317,19 @@
 	background-color: var(--electric-blue);
 	border-color: var(--malachite);
 	color: var(--rich-black-2);
+	transform: scale(1.1);
+  }
+
+  /* Spotify Button */
+	.spotify-button {
+	font-family: 'Audiowide', cursive;
+	color: var(--mindaro);
+	border-color: var(--tea-green);
+	transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .spotify-button:hover {
+	border-color: var(--tea-green);
+	color: var(--chamoisee);
 	transform: scale(1.1);
   }
 

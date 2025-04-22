@@ -3,14 +3,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <title>You shouldn't Be here!?!</title>
     </head>
     <body>
         <form action="/submit-song" method="POST">
             <input type="text" id="trackUri" name="trackUri" class="form-control" placeholder="e.g. https://open.spotify.com/track/..." required><br><br>
-            <a href="/login" class="btn btn-outline-light login-buttons text-shadow mx-2">Log in with Spotify</a>
-            <button type="submit" class="btn btn-outline-light login-buttons text-shadow mx-2">Submit</button>
-            <a href="https://open.spotify.com/playlist/1sTzjueAClM4LRulUso1pV?si=5211256a6f8e42e2" class="btn btn-outline-light login-buttons text-shadow mx-2">The Big Playlist</a>
+            <a href="/login" class="btn btn-outline-light login-buttons text-shadow mx-2 p-1">Log in with Spotify</a>
+            <button type="submit" class="btn btn-outline-light login-buttons text-shadow mx-2 p-1">Submit</button>
+            <a href="https://open.spotify.com/playlist/1sTzjueAClM4LRulUso1pV?si=5211256a6f8e42e2" target="_blank" class="me-3 text-center">
+                <i class="fab fa-spotify spotify-button p-2" style="color: #1DB954;">The Big Playlist on Spotify</i>
+            </a>
         </form>
     </body>
 </html>
