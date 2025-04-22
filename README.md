@@ -13,6 +13,12 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 
 ---
 
+## 🌐 Hosted with Firebasw
+
+> https://the-big-playlist.web.app/ (static version) 
+
+---
+
 ## 🧰 Built With
 
 - **HTML5** – semantic layout
@@ -44,3 +50,7 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 ```bash
 git clone https://github.com/yourusername/final-project-music.git
 cd final-project-music
+
+## Authors
+- https://github.com/TebariousBag
+- https://github.com/Jimwall0
