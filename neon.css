@@ -92,14 +92,14 @@
 	
 	/* BodyStyles */
 	body {
-	  background-color: var(--cerise);
+	  background-color: var(--rose-pompadour);
 	  color: var(--oxford-blue);
 	}
 
 	.highlight {
 		font-family: 'Rock Salt', cursive;
 		font-size: 2rem;
-		color: var(--cerise);
+		color: var(--malachite);
 		text-align: center;
 		margin-top: 2vh;
 	  }
