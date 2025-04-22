@@ -4,8 +4,8 @@ const redirect_uri = 'http://127.0.0.1:5000/callback';
 const app = express();
 
 app.get('/login', (req, res) => {
-    var state = generateRandomString(16);
-    var scope = 'user-read-private user-read-email';
+    const state = generateRandomString(16);
+    const scope = 'user-read-private user-read-email';
 
     res.redirect('https://accounts.spotify.com/authorize?' + 
         querystring.stringify({
