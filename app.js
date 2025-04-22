@@ -1,6 +1,6 @@
-const express = require('express');
-const SpotifyWebApi = require('spotify-web-api-node');
-require('dotenv').config();
+const express = require('express');//Helps with building and useing HTTP request
+const SpotifyWebApi = require('spotify-web-api-node');//Spotify api
+require('dotenv').config();//Loads in my sensitive information in the environment
 
 const app = express();
 const port = 5000;
@@ -64,11 +64,11 @@ app.post('/submit-song', (req, res) => {
     const playlistId = '1sTzjueAClM4LRulUso1pV';
 
     if (!spotifyApi.getAccessToken()) {
-        res.send("You havn't logged in yet")
+        return res.send("You havn't logged in yet")
     }
     let trackUri;
     if (input.includes('open.spotify.com/track/')) {
-        const match = input.match(/track\/([a-zA-Z0-9]{22})(\?.*)/);
+        const match = input.match(/track\/([a-zA-Z0-9]{22})(\?.*)?/);
         if (match) {
             trackUri = `spotify:track:${match[1]}`;
         } else {
