@@ -10,3 +10,9 @@ fetch('form.html')
     .then(data => {
     document.getElementById('recommend').insertAdjacentHTML('afterbegin', data);
 })
+
+window.addEventListener("lod", () => {
+    if (localStorage.themecolor) {
+        document.body.style.back
+    }
+})

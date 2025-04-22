@@ -63,9 +63,12 @@ app.post('/submit-song', (req, res) => {
     let input = req.body.trackUri.trim();
     const playlistId = '1sTzjueAClM4LRulUso1pV';
 
+    if (!spotifyApi.getAccessToken()) {
+        res.send("You havn't logged in yet")
+    }
     let trackUri;
     if (input.includes('open.spotify.com/track/')) {
-        const match = input.match(/track\/([a-zA-Z0-9]{22})/);
+        const match = input.match(/track\/([a-zA-Z0-9]{22})(\?.*)/);
         if (match) {
             trackUri = `spotify:track:${match[1]}`;
         } else {
