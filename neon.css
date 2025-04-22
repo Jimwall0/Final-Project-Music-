@@ -96,6 +96,14 @@
 	  color: var(--oxford-blue);
 	}
 
+	.highlight {
+		font-family: 'Rock Salt', cursive;
+		font-size: 2rem;
+		color: var(--cerise);
+		text-align: center;
+		margin-top: 2vh;
+	  }
+
 	/* didn't like Bootstrap Shadow */
 	.custom-shadow {
 		box-shadow: 0 0 10px var(--rich-black);
@@ -360,14 +368,14 @@
 	
 	@media (max-width: 576px) {
 	  /* hero section */
-	  .hero-h1 {
-		font-size: 1.5rem;
-		margin-top: 10vh;
-	  }
-	
-	  .hero-text {
-		font-size: 1.2rem;
-		margin-top: 3vh;
-	  }
-	}
+  .hero-h1 {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    margin-top: 1vh;
+  }
+}
 	

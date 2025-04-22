@@ -96,6 +96,14 @@
 	  color: var(--oxford-blue);
 	}
 
+	.highlight {
+		font-family: 'Rock Salt', cursive;
+		font-size: 2rem;
+		color: var(--charcoal);
+		text-align: center;
+		margin-top: 2vh;
+	  }
+
 	/* didn't like Bootstrap Shadow */
 	.custom-shadow {
 		box-shadow: 0 0 10px var(--rich-black);
@@ -110,7 +118,7 @@
 	.hero-h1 {
 	  font-family: 'Press Start 2P', cursive;
 	  font-size: 3rem;
-	  color: var(--rich-black-2);
+	  color: var(--charcoal);
 	  text-align: center;
 	  margin-top: 7vh;
 	}
@@ -118,7 +126,7 @@
 	.hero-text {
 	  font-family: 'Rock Salt', cursive;
 	  font-size: 1.5rem;
-	  color: var(--rich-black-2);
+	  color: var(--charcoal);
 	  text-align: center;
 	  margin-top: 2vh;
 	}
@@ -359,14 +367,47 @@
 	
 	@media (max-width: 576px) {
 	  /* hero section */
-	  .hero-h1 {
-		font-size: 1.5rem;
-		margin-top: 10vh;
+  .hero-h1 {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    margin-top: 1vh;
+  }
+}
+
+	  /* Contact Section Styles */
+	.contact-h1 {
+		font-family: 'Press Start 2P', cursive;
+		font-size: 3rem;
+		color: var(--charcoal);
+		text-align: center;
+		margin-top: 7vh;
 	  }
-	
-	  .hero-text {
-		font-size: 1.2rem;
-		margin-top: 3vh;
-	  }
-	}
+	  
+	  .contact-text {
+		  font-family: 'Press Start 2P', cursive;
+		  font-size: 1.5rem;
+		  color: var(--charcoal);
+		  text-align: center;
+		  margin-top: 2vh;
+		}
+		
+		a.contact-text {
+		  font-family: 'Press Start 2P', cursive;
+		  font-size: 1.5rem;
+		  color: var(--charcoal);
+		  text-align: center;
+		  margin-top: 2vh;
+		  text-decoration: none;
+		  transition: transform 0.3s ease, color 0.3s ease;
+		  display: inline-block;
+		}
+		
+		a.contact-text:hover {
+		  color: var(--french-gray);
+		  transform: scale(1.1);
+		}
 	
