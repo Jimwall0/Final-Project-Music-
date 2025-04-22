@@ -94,5 +94,12 @@ app.get('/login', (req, res) => {
     res.redirect(authUrl);
 });
 
+app.get('/logout', (req, res) => {
+    spotifyApi.setAccessToken(null);
+    spotifyApi.setRefreshToken(null);
+    res.redirect('/')
+});
+
+
 console.log("CLIENT ID:", process.env.CLIENT_ID);
 console.log("REDIRECT URI:", process.env.REDIRECT_URI);
