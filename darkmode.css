@@ -376,9 +376,8 @@
     font-size: 1.2rem;
     margin-top: 1vh;
   }
-}
 
-	  /* Contact Section Styles */
+   /* Contact Section Styles */
 	.contact-h1 {
 		font-family: 'Press Start 2P', cursive;
 		font-size: 3rem;
@@ -410,4 +409,6 @@
 		  color: var(--french-gray);
 		  transform: scale(1.1);
 		}
+}
+
 	
