@@ -73,3 +73,17 @@ app.get('/callback', (req, res) => {
         };
     }
 });
+
+
+//local storage shenanigans
+async function getProfile(accessToken) {
+    let accessToken = localStorage.getItem('access_token');
+
+    const response = await fetch('http://api.spotify.com/v1/me', {
+        headers: {
+            Authorization: `Bearer ${accessToken}`
+        }
+    });
+
+    const data = await response.json();
+}
