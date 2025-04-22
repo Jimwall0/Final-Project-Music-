@@ -364,11 +364,22 @@ a.contact-text:hover {
   /* hero section */
   .hero-h1 {
     font-size: 1.5rem;
-    margin-top: 10vh;
+    margin-top: 2vh;
   }
 
   .hero-text {
     font-size: 1.2rem;
-    margin-top: 3vh;
+    margin-top: 1vh;
+  }
+
+  /* video carousel */
+  .carousel-wrapper {
+    padding: 1rem; /* reduce padding */
+  }
+
+  .carousel-wrapper iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 }
