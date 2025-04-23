@@ -70,7 +70,7 @@
           <h2 class="text-center musicplayer-h1 text-shadow">Feel free to change the theme!</h2>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('neon.css')">Neon Theme</button>
-		  <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
+		      <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
         </div>
         <div class="text-center my-3 bg-dark p-4 border border-4 rounded text-white login-custom">
         <!-- Actual song recomendation portion -->
@@ -80,6 +80,8 @@
           <li><b>Step 2.</b> Find the url to the track you would like to add</li>
           <li><b>Step 3.</b> Paste the url in the bar below</li>
           <li><b>Step 4.</b> Click Submit!</li>
+          <li><b>Step 5.</b> Log Of</li>
+          <li><b>step 6.</b> Click on The Big Playlist if Not Showing</li>
         </ul>
         <!-- Buttons to change theme and a recomendation form -->
         <!-- Empty div for messing around with Spotify API -->
@@ -128,22 +130,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Change Theme Script -->
-    <script>
-      // take button input
-      function changeTheme(themeFile) {
-        // get the stylesheet link element
-        // change the href attribute to the new theme file
-        const stylesheet = document.getElementById("themechange");
-        stylesheet.href = themeFile;
-      }
-    </script>
-    <!-- script to add other html files to index.html -->
-    <script>
-      fetch('form.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('recommend').insertAdjacentHTML('afterbegin', data);
-        })
-    </script>
+    <script src="styles.js"></script>
   </body>
 </html>
