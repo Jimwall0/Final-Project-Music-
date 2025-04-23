@@ -70,7 +70,7 @@
           <h2 class="text-center musicplayer-h1 text-shadow">Feel free to change the theme!</h2>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('styles.css')">Default Theme</button>
           <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('neon.css')">Neon Theme</button>
-		  <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
+		      <button class="btn theme-buttons mx-1 custom-shadow" onclick="changeTheme('darkmode.css')">Dark Theme</button>
         </div>
         <div class="text-center my-3 bg-dark p-4 border border-4 rounded text-white login-custom">
         <!-- Actual song recomendation portion -->
@@ -143,6 +143,7 @@
           document.getElementById('recommend').insertAdjacentHTML('afterbegin', data);
         });
       
+      //Makes the Cookie
       function setCookie(name, value, day) {
         const cookieArr = document.cookie.split('; ');
         for (let cookie of cookieArr) {
@@ -152,6 +153,7 @@
         return null;
       }
 
+      //
       function changeTheme(themeFile) {
         const stylesheet = document.getElelmentById("themechange");
         if (stylesheet) {
