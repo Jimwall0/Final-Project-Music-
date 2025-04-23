@@ -143,7 +143,22 @@
           document.getElementById('recommend').insertAdjacentHTML('afterbegin', data);
         });
       
-        
+      function setCookie(name, value, day) {
+        const cookieArr = document.cookie.split('; ');
+        for (let cookie of cookieArr) {
+          let [key, val] = cookie.split("=");
+          if (key === name) return val;
+        }
+        return null;
+      }
+
+      function changeTheme(themeFile) {
+        const stylesheet = document.getElelmentById("themechange");
+        if (stylesheet) {
+          stylesheet.href = themeFile;
+          setCookie("selectedTheme", themeFile, 30);
+        }
+      }
     </script>
   </body>
 </html>
