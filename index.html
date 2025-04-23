@@ -145,14 +145,16 @@
       
       //Makes the Cookie
       function setCookie(name, value, day) {
-        const cookieArr = document.cookie.split('; ');
-        for (let cookie of cookieArr) {
-          let [key, val] = cookie.split("=");
-          if (key === name) return val;
-        }
-        return null;
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = `${name}=${value};${expires};path=/`;
       }
 
+      function getCookie(name) {
+        const cookieArr = document.cookie.split("; ");
+        for ()
+      }
       //
       function changeTheme(themeFile) {
         const stylesheet = document.getElelmentById("themechange");
