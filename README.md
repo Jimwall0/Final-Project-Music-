@@ -58,5 +58,5 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 ### 1. Clone This Repository
 
 ```bash
-git clone https://github.com/yourusername/final-project-music.git
-cd final-project-music
+git clone https://github.com/yourusername/final-project-music-.git
+cd final-project-music-
