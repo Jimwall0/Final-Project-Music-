@@ -136,14 +136,14 @@
         const stylesheet = document.getElementById("themechange");
         stylesheet.href = themeFile;
       }
-    </script>
-    <!-- script to add other html files to index.html -->
-    <script>
+
       fetch('form.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('recommend').insertAdjacentHTML('afterbegin', data);
-        })
+        });
+      
+        
     </script>
   </body>
 </html>
