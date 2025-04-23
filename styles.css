@@ -305,13 +305,13 @@ a.contact-text:hover {
   font-family: 'Audiowide', cursive;
   color: var(--mindaro);
   border-color: var(--tea-green);
-  background-color: var(--chamoisee);
+  background-color: var(--malachite);
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .login-buttons:hover {
-  background-color: var(--drab-brown-2);
+  background-color: var(--brunswick-green);
   border-color: var(--tea-green);
-  color: var(--chamoisee);
+  color: var(--tea-green);
   transform: scale(1.1);
 }
 
