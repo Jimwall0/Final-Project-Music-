@@ -356,6 +356,9 @@ a.contact-text:hover {
   background-color: var(--eerie-black) !important;
   border-color: var(--vanilla) !important;
 }
+.login-custom {
+  color: var(--mindaro);
+}
 
 /* Screen Size adjustments */
 

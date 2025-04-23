@@ -347,6 +347,10 @@
 	border-color: var(--vanilla) !important;
   }
 
+  .login-custom {
+	color: var(--charcoal);
+  }
+
   /* Spotify Button */
 	.spotify-button {
 	font-family: 'Audiowide', cursive;

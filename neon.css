@@ -359,6 +359,10 @@
 	background-color: var(--eerie-black) !important;
 	border-color: var(--vanilla) !important;
   }
+
+  .login-custom {
+	color: var(--malachite);
+  }
 	
 	  
 	/* Screen Size adjustments */
