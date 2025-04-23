@@ -151,6 +151,7 @@
         document.cookie = `${name}=${value};${expires};path=/`;
       }
 
+      //Retrieves the cookie
       function getCookie(name) {
         const cookieArr = document.cookie.split("; ");
         for (let cookie of cookieArr) {
@@ -159,12 +160,24 @@
         }
         return null;
       }
-      //
+
+      //Changes the theme
       function changeTheme(themeFile) {
         const stylesheet = document.getElelmentById("themechange");
         if (stylesheet) {
           stylesheet.href = themeFile;
           setCookie("selectedTheme", themeFile, 30);
+        }
+      }
+
+      //Loads the theme
+      window.onload = function () {
+        const savedTheme = getCookie("selectedTheme");
+        if (savedTheme) {
+          const stylesheet = document.getElementById("themechange");
+          if (stylesheet) {
+            stylesheet.href = savedTheme;
+          }
         }
       }
     </script>
