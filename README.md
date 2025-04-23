@@ -22,7 +22,7 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 ### Main Three components
 * - Hosted on Firebase - without the Google Form, paywall for that
 * - CSS Framework, Bootstrap
-
+* - Responsive UI
 
 
 ## 🧰 Built With
