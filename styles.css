@@ -360,6 +360,24 @@ a.contact-text:hover {
   color: var(--mindaro);
 }
 
+/* Google Form Wrapper */
+.google-form-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 80%; /* Adjust for desired height ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.google-form-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Screen Size adjustments */
 
 @media (max-width: 768px) {

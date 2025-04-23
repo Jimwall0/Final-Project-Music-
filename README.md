@@ -13,11 +13,17 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 
 ---
 
-## 🌐 Hosted with Firebasw
+## 🌐 Hosted with Firebase
 
 > https://the-big-playlist.web.app/ (static version) 
 
 ---
+
+### Main Three components
+* - Hosted on Firebase - without the Google Form, paywall for that
+* - CSS Framework, Bootstrap
+
+
 
 ## 🧰 Built With
 
