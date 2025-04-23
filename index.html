@@ -129,14 +129,6 @@
 
     <!-- Change Theme Script -->
     <script>
-      // take button input
-      function changeTheme(themeFile) {
-        // get the stylesheet link element
-        // change the href attribute to the new theme file
-        const stylesheet = document.getElementById("themechange");
-        stylesheet.href = themeFile;
-      }
-
       fetch('form.html')
         .then(response => response.text())
         .then(data => {
@@ -146,7 +138,7 @@
       //Makes the Cookie
       function setCookie(name, value, day) {
         const date = new Date();
-        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        date.setTime(date.getTime() + day * 24 * 60 * 60 * 1000);
         const expires = "expires=" + date.toUTCString();
         document.cookie = `${name}=${value};${expires};path=/`;
       }
@@ -163,7 +155,7 @@
 
       //Changes the theme
       function changeTheme(themeFile) {
-        const stylesheet = document.getElelmentById("themechange");
+        const stylesheet = document.getElementById("themechange");
         if (stylesheet) {
           stylesheet.href = themeFile;
           setCookie("selectedTheme", themeFile, 30);
