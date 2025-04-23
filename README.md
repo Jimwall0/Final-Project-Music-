@@ -49,6 +49,10 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 
 ---
 
+## Authors
+- https://github.com/TebariousBag
+- https://github.com/Jimwall0
+
 ## 🚀 Getting Started
 
 ### 1. Clone This Repository
@@ -56,7 +60,3 @@ Welcome to **Final Project (Music)** — a responsive, interactive music-themed 
 ```bash
 git clone https://github.com/yourusername/final-project-music.git
 cd final-project-music
-
-## Authors
-- https://github.com/TebariousBag
-- https://github.com/Jimwall0
