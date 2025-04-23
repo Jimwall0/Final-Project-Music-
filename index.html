@@ -153,7 +153,11 @@
 
       function getCookie(name) {
         const cookieArr = document.cookie.split("; ");
-        for ()
+        for (let cookie of cookieArr) {
+          let [key, val] = cookie.split("=");
+          if (key === name) return val;
+        }
+        return null;
       }
       //
       function changeTheme(themeFile) {
