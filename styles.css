@@ -321,11 +321,13 @@ a.contact-text:hover {
   color: var(--mindaro);
   border-color: var(--tea-green);
   transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
 }
 .spotify-button:hover {
   border-color: var(--tea-green);
   color: var(--chamoisee);
   transform: scale(1.1);
+  text-decoration: none;
 }
 
 /* Instructions Styling */
